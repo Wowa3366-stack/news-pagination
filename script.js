@@ -44,3 +44,37 @@ function fetchArticles() {
 }
 
 fetchArticles()
+
+
+
+function renderPagination(){
+const totalPage = Math.ceil(totalResult/12)
+
+let markup = "";
+
+
+if (totalPage <= 1) {
+return;
+}
+
+//попередня
+markup += `button data-page="${page - 1)">previous</button>";`
+  
+//номер сторінко
+
+for (let i = 1 i <= totalPage; i++) {
+
+
+
+}
+
+
+
+markup +=
+<button data-page="${page + 1}">next</button>";
+
+
+
+
+}
+
